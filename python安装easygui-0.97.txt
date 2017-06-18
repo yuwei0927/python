@@ -1,0 +1,3 @@
+python安装easygui
+ 
+安装：解压后将easygui.py拷贝进Python安装目录下的Lib\site-packages文件夹下
