@@ -20,7 +20,7 @@ def UrlOpen(url):
     req = urllib.request.Request(url)
     req.add_header(HeadKey, HeadVal)
     response = urllib.request.urlopen(req)
-    html = response.read().decode("utf-8")
+    html = response.read().decode("utf-8")  #如果是分析Html中的内容，需要增加decode部分。而如果是保存Html内容，则不要增加decode部分。
     return html
 
 def getProxy(url, typeName):     #从IP代理网站上抓取代理IP，存入Proxy列表中
